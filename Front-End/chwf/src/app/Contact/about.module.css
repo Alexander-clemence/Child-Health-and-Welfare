@@ -8,7 +8,7 @@ height:100vh;
 }
 .container{
   display:flex;
-  padding: 6rem;
+  padding: 5rem;
   @media (max-width: 768px){
     flex-direction: column;
   }
