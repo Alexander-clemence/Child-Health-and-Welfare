@@ -1,0 +1,86 @@
+.contact{
+background-image: url(./images/contact.png);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+width:100vw;
+height:100vh;
+}
+.container{
+  display:flex;
+  padding: 5rem;
+  @media (max-width: 768px){
+    flex-direction: column;
+  }
+}
+.text{
+  margin:5rem;
+  font-size:1.1rem;
+  font-weight: bold;
+  background-color:#0c7c58ad ;
+  border-radius: 10px;
+  padding:1rem;
+  color:yellow;
+  font-family: league spartan;
+  @media (max-width: 768px) {
+    font-size:0.9rem;
+  }
+}
+/* Reset default browser styles (optional, but recommended for consistency) */
+.form { /* Create a container for the form */
+  display: flex; /* Arrange elements horizontally */
+  flex-direction: column; /* Stack elements vertically */
+  width: 400px; /* Adjust width as needed */
+  margin: 5rem auto; /* Add some margin for spacing */
+  padding: 20px; /* Add some padding for aesthetics */
+  border-radius: 20px; /* Rounded corners for a modern touch */
+  background-color: #f5f5f5; /* Light background for better readability */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  width:60%;
+}
+
+.form label { /* Style form labels */
+  display: block; /* Make labels occupy full width on smaller screens */
+  margin-bottom: 5px; /* Add some space below labels */
+  font-weight: bold;
+  color: #333; /* Darker text for better contrast */
+}
+
+.form input[type="text"],
+.form input[type="email"] { /* Style text and email input fields */
+  width: 100%; /* Make inputs fill the available space */
+  padding: 10px;
+  border: 1px solid #ccc; /* Light border for separation */
+  border-radius: 20px; /* Rounded corners for a modern look */
+  font-size: 16px; /* Adjust font size as needed */
+  background-color: #fff; /* White background for clear input */
+}
+
+.form textarea { /* Style textarea */
+  width: 100%;
+  height: 150px; /* Adjust height as needed */
+  padding: 10px;
+  border: 1px solid #ccc; /* Light border for separation */
+  border-radius: 18px; /* Rounded corners for a modern look */
+  font-size: 16px; /* Adjust font size as needed */
+  background-color: #fff; /* White background for clear input */
+  resize: vertical; /* Allow vertical resizing for longer messages */
+}
+
+.form button { /* Style the submit button */
+  display: flex;
+  justify-content: center; /* Center button content horizontally */
+  align-items: center; /* Center button content vertically */
+  padding: 10px 20px; /* Add some padding for comfortable clicking */
+  border: none; /* Remove default button border */
+  border-radius: 3px; /* Rounded corners for a modern look */
+  cursor: pointer; /* Indicate hover state with cursor change */
+  background-color: #3498db; /* Blue background for primary action */
+  color: #fff; /* White text for better contrast */
+  font-size: 16px; /* Adjust font size as needed */
+  transition: background-color 0.2s ease-in-out; /* Smooth transition on hover */
+}
+
+.form button:hover { /* Button hover effect */
+  background-color: #2980b9; /* Darker blue on hover */
+}

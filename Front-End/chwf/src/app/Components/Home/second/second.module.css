@@ -1,0 +1,102 @@
+.second{
+    background-image: url(./images/second.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
+    background-position: center;
+    display: flex; /* Flexbox for easy layout */
+    flex-direction: column; /* Stack elements vertically */ /* Center content vertically */
+    overflow: hidden;
+    justify-content: center; /* Center content vertically */
+    align-items: center;   /* Center content horizontally */
+}
+.container {
+  display: grid;
+  padding:1rem;
+  grid-template-columns: 1fr 2fr;
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr; /* Single column on smaller screens */
+  }
+}
+  .container1{
+    display: grid;
+    grid-template-rows: 1fr;
+    padding:2rem;
+  }
+  
+  .childgrid1 {
+    display: grid; /* Use grid for more control over layout */
+    grid-template-columns: 1fr;
+
+  }
+  
+  .header {
+    background-color: #0c7c58;
+    font-size:3rem;
+    color:white;
+    background-size: contain;
+    margin:1rem;
+    border-radius:10px;
+  }
+  
+  
+  .childgrid2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin:1rem;
+    padding:1rem;
+    @media (max-width: 768px) {
+      flex-direction: row;
+      padding:1rem; /* Single column layout on smaller screens */
+    }
+    
+  }
+  
+  .textContainer1 {
+    padding: 1rem;
+    font-size: 1rem;
+    color:white;
+    background-color:#0c7c58e3;
+    display:flex;
+    flex-direction:column;
+ justify-content: center;
+ align-items: center;
+ border-radius:10px;
+    
+  }
+  .textContainer2,.textContainer3 {
+    padding: 1rem;
+    color:white;
+    background-color:#0c7c58e3;
+    margin:1rem;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    border-radius:10px;
+    @media (max-width: 768px) {
+      font-size: 1.2rem; /* Single column layout on smaller screens */
+    }
+
+  }
+  .text {
+    margin-bottom: 20px;
+    color:rgb(238, 255, 0);
+    display:flex;
+    font-size: 1.2rem;
+    flex-direction:column;
+    @media (max-width: 768px) {
+      font-size: 1rem; /* Single column layout on smaller screens */
+    }
+  }
+  
+
+  .gridmini{
+    display: grid; /* Use grid for more control over layout */
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .heading{
+    font-size:3rem;
+    
+  }

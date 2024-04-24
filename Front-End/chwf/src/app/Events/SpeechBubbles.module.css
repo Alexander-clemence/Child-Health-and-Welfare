@@ -1,0 +1,24 @@
+.container {
+padding-top: 4rem;
+}
+.container h1{
+  font-size:3rem;
+}
+.calendar{
+  background-image: url(./Images/calendar.png);
+  background-size: cover;
+  height:100%;
+  width:100vw;
+  background-position: center;
+}
+.header{
+  background-color:aqua;
+  background-size: contain;
+  margin-left:1rem;
+  width:35%;
+
+  border-radius:10px;
+  @media (max-width:767px){
+    width:80%;
+  }
+}

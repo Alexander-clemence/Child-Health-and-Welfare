@@ -1,0 +1,10 @@
+.container {
+    position: relative;
+    display:grid;
+    grid-template-rows: repeat(4, 1fr);
+}
+.child-grid-1, .child-grid-2, .child-grid-3, .child-grid-4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+
+  }

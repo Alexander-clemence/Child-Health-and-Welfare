@@ -1,0 +1,61 @@
+/* ContactUsFooter.module.css */
+.footer {
+    background-color:#0c7c58;
+    padding: 30px;
+    text-align: center;
+    color: yellow;
+    opacity: 80%;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .contactInfo,
+  .socialLinks {
+    flex: 1;
+  }
+  
+  .h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .li {
+    margin-bottom: 10px;
+  }
+  
+  .a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .a:hover {
+    text-decoration: underline;
+  }
+  
+  .copyright {
+    margin-top: 20px;
+    font-size: 0.8rem;
+  }
+  
+  @media (max-width: 768px) {
+    /* Add responsive styles for smaller screens */
+    .container {
+      flex-direction: column;
+    }
+    .contactInfo,
+    .socialLinks {
+      margin-bottom: 20px;
+    }
+  }
+  
