@@ -4,6 +4,7 @@ import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button"
+import { useToast } from "@/components/ui/use-toast"
 
 
 
@@ -11,6 +12,7 @@ import { Button } from "@/components/ui/button"
 import styles from './contac.module.css'
 
 const Contactform = () => {
+  const { toast } = useToast()
   return (
     <>
     <div className={styles.title}>
@@ -25,7 +27,13 @@ const Contactform = () => {
       <Input type="text" id="subject" placeholder="Subject"/><br/>
       <Label htmlFor="message">Message</Label>
       <Textarea placeholder="Type your message here." /><br/>
-      <Button>Send</Button>
+      <Button
+       onClick={() => {
+        toast({
+          title: "Message Sent",
+          description: "Thank you for taking time to reach out to us",
+        })
+      }}>Send</Button>
     </div>
     </>
   )
