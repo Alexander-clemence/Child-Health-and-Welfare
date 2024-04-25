@@ -8,18 +8,19 @@ height:100vh;
 }
 .container{
   display:flex;
-  padding: 5rem;
+  padding: 1rem;
   @media (max-width: 768px){
     flex-direction: column;
   }
 }
 .text{
   margin:5rem;
-  font-size:1.1rem;
+  font-size:1.5rem;
   font-weight: bold;
   background-color:#0c7c58ad ;
   border-radius: 10px;
   padding:1rem;
+  width: 600px;
   color:yellow;
   font-family: league spartan;
   @media (max-width: 768px) {
@@ -30,13 +31,14 @@ height:100vh;
 .form { /* Create a container for the form */
   display: flex; /* Arrange elements horizontally */
   flex-direction: column; /* Stack elements vertically */
-  width: 400px; /* Adjust width as needed */
+  width: 700px;
+  height: 600px; /* Adjust width as needed */
   margin: 5rem auto; /* Add some margin for spacing */
   padding: 20px; /* Add some padding for aesthetics */
   border-radius: 20px; /* Rounded corners for a modern touch */
   background-color: #f5f5f5; /* Light background for better readability */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  width:60%;
+  float:right
 }
 
 .form label { /* Style form labels */
