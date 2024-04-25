@@ -13,6 +13,7 @@ import {
 } from "@/components/ui/card";
 import Image from 'next/image';
 import { motion, useViewportScroll, useTransform } from "framer-motion";
+import { Button } from "@/components/ui/button"
 
 
 const Third = () => {
@@ -46,7 +47,7 @@ const Third = () => {
                 />
             </CardContent>
             <CardFooter>
-                  <p>read more</p>
+                  <Button variant="secondary">Read more</Button>
             </CardFooter>
             </Card>
           </div>
@@ -66,7 +67,7 @@ const Third = () => {
                 />
           </CardContent>
           <CardFooter>
-          <p>read more</p>
+          <Button variant="secondary">Read more</Button>
           </CardFooter>
           </Card>
           </div>
@@ -86,7 +87,7 @@ const Third = () => {
                 />
           </CardContent>
           <CardFooter>
-          <p>read more</p>
+          <Button variant="secondary">Read more</Button>
           </CardFooter>
           </Card>
           </div>
