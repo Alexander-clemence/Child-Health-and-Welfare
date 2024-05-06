@@ -1,4 +1,4 @@
-/* .intro styles */
+/*.intro styles */
 .intro {
   position: relative; /* Allow positioning of elements within */
   height: 100vh; /* Fill viewport height */
@@ -13,22 +13,21 @@
   background-position: center;
   /* Hide overflow if needed */
 }
+
 /*Container styles*/
 .container {
   display: flex;
-    left:0;
-    align-items: center;
-    margin-top:-1rem;
-    margin:0.5rem;
-    padding:2rem;
-    @media (max-width: 768px) {
-      flex-direction: column; /* Single column layout on smaller screens */
-    }
-
+  left:0;
+  align-items: center;
+  margin-top:-1rem;
+  margin:0.5rem;
+  padding:2rem;
+  @media (max-width: 768px) {
+    flex-direction: column; /* Single column layout on smaller screens */
+  }
 }
 
-
-/* .h1 styles */
+/*.h1 styles */
 .h1 {
   font-size: 6rem; /* Adjust font size as needed */
   color:black;
@@ -38,12 +37,13 @@
     font-size:3rem;/* Single column layout on smaller screens */
   }  /* Space out headings */
 }
+
 .h2{
   color:white;
   font-size:3rem;
-justify-content: left;
-
+  justify-content: left;
 }
+
 .p{
   font-size:1.5rem;
   color:rgb(238, 255, 0);
@@ -52,6 +52,7 @@ justify-content: left;
   margin:0.3rem;
   border-radius: 10px;
 }
+
 .right {
   padding-top: 35rem; /* Default padding for larger screens */
 
@@ -60,29 +61,26 @@ justify-content: left;
   }
 }
 
-
-
-@media (max-width: 768px) { /* Target iPhone 14 Pro Max */
-  .intro {
-    font-size: 2rem; /* Adjust base font size for better readability */
+/* Media query for mobile screens at lower than 568px */
+@media (max-width: 390px) {
+ .intro {
+    font-size: 0.5rem; /* Adjust base font size for better readability */
   }
 
-  .container {
-    margin: 1rem;
-    padding:1rem; /* Adjust margins for better spacing */
+ .container {
+    margin: 0.5rem;
+    padding:0.5rem; /* Adjust margins for better spacing */
   }
 
-  .h1 {
-    font-size: 5rem; /* Reduce heading font size */
-  }
-  .h2{
-    display:flex;
-    flex-direction: column;
-    font-size:4rem;
+ .h1 {
+    font-size: 10px; /* Reduce heading font size */
   }
   
+ .h2{
+    font-size: 0.5rem;
+  }
 
-  .p {
-    font-size:2rem; /* Slightly reduce paragraph font size */
+ .p {
+    font-size:2px; /* Slightly reduce paragraph font size */
   }
 }
